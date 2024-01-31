@@ -1,14 +1,10 @@
-# A Hawaiian Star Dictionary - star_names
+# The following collection of 70+ programs were written by myself (Keala Piimanu) over the course of taking courses through Harvard University/Ed-Ex
 
-#### Video Demo: https://youtu.be/7K9GUJiiuJY
+#### All programs were written as I was self learning programming and understanding different components to logic and computer science.
 
-#### Description: My program I created was inspired by the Hawaiian stars. Like other cultures, Native Hawaiians had names for their own stars. There are a total of 26 stars that can be named in Hawaiian. I decided to create a program that would serve as a Hawaiian star dictionary where the user could input the name of a star, and it would output the Hawaiian name for that star (should it exist).
+#### The majority of the programs are written in Python. Though there are some written in C as well as some additional files.
 
 
-#### I first created a csv file that included the english and hawaiian names for the 26 stars. I made sure to note that they were written in a specific way that would require me to convert the user input to a new form using title(). The name of my csv file is inoa_hoku.csv. In my project.py file, I organized it in a way that prompted the user to input a "star name" and then I checked that the input was valid.
+#### There wasnt a better way to keep files that went together for certain programs on this repository. 
 
-#### Valid inputs had to make sure that it was not at all numeric. Valid inputs also had to make sure it wasn't just blank. Also, when the input was finally compared to that of the information within the csv file, there was a final check if that star was in fact in that list or not.
-
-#### Instead of just making the hawaiian star name as an output by itself, I decided to make it into a sentence. To verbalize that the Hawaiian name for "blank" star was "blank". I also wanted to add a creative twist to my output. This is where i put a lot of my time into figuring out. I wanted to include along with the sentence, a hawaiian tribal pattern that I was able to create using ASCII characters. That way, I was cleverly able to include some kind of visual in the terminal window along with the sentence.
-
-#### I also created a test_project.py file that serves as a test module for my program. I was able to test 3 of the functions that i created in the program to make sure they worked as anticipated.
+#### But for my use cases, this was my best attempt in organizing the collection of programs I have written.
