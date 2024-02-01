@@ -1,118 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-*{
-    box-sizing: border-box;
+body {
+    background-color: #4682B4;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
     margin: 0;
-    padding: 0;
+    text-align: left;
 }
 
-li, a, button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-.info {
-    color: #FFFAF0
-}
-
-h2 {
-    color: #FFFAF0
-}
-
-h3 {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-img {
-    width: 250px;
-    float: left;
-    margin: 10px;
-}
-
-.logo {
-    cursor: pointer;
+.container {
+    margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.nav__links {
-    list-style: none;
+.header {
+    background-color: #FF6347;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
 }
 
-.nav__links li a {
-    transition: all 0.3s ease 0s;
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.nav__links li a: hover {
-    color: #0088A9;
+h1 {
+    font-family: 'Papyrus', Fantasy;
+    font-size: 90px;
 }
 
-button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
 }
 
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
 
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
 }
 
-img.keala {
-    width: 250px;
-    border-radius: 50px;
-    float: left;
-    margin: 10px;
-  }
-
-  em.university {
-    text-decoration: underline;
-  }
-
-  body {
-    background-image: url(images/galaxy.jpeg);
-   }
-
-li.info {
-    list-style-type: circle;
-    list-style-position: outside;
-    color: black;
-   }
-
-div {
-    border: 1px solid black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 150px;
-    margin-left: 150px;
-    background-color: lightblue;
-    color: #000000;
-  }
-
-ul.b {
-    list-style-type: square;
-    color: #000000;
-  }
-
-  li {
-    color: #000000;
-  }
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}

@@ -10,7 +10,7 @@ def main():
     if is_valid(plate):
         print("Valid")
     else:
-        print("Invalid")
+        return False
 
 # Function that assesses if input meets all requirements
 def is_valid(s):
@@ -51,4 +51,5 @@ def number_use(s):
 
     return True
 
-main()
+if __name__ == "__main__":
+    main()

@@ -1,52 +1,55 @@
 # Program that prompts for fraction and outputs a percentage
 
-# Request input from user as a fraction
-while True:
-    try:
-        fuel = input("Fraction: ")
-
-        # Separate input into list for conversion later
-        fuel = fuel.split(sep="/")
-
-        # Convert str in list to int in list
-        for i in range(0, len(fuel)):
-            fuel[i] = int(fuel[i])
-
-        # Store variables for ints
-        numerator = fuel[0]
-        denominator = fuel[1]
-
-        # Check for zero division error
-        if denominator == 0:
-            raise ZeroDivisionError
-
-        # Check if numerator is greater than denominator
-        if numerator > denominator:
-            raise ValueError
-
-        # Compute
-        fuel_percent = (numerator / denominator) * 100
-        fuel_percent = round(fuel_percent)
+def main():
+    fraction = input("Fraction: ")
+    percentage = convert(fraction)
+    percentage = int(percentage)
+    result = gauge(percentage)
+    print(result)
 
 
-        # Sort through fuel guage full vs empty vs other
-        if fuel_percent <= 1:
-            print("E")
+def convert(fraction):
+    # Separate input into list for conversion later
+    fraction = fraction.split(sep="/")
 
-            # Exit loop
-            break
-        elif fuel_percent >= 99:
-            print("F")
+    # Convert str in list to int in list
+    for i in range(0, len(fraction)):
+        fraction[i] = int(fraction[i])
 
-            # Exit loop
-            break
-        else:
-            # Output percent
-            print(f"{fuel_percent}%")
+    # Store variables for ints
+    numerator = fraction[0]
+    denominator = fraction[1]
 
-            # Exit loop
-            break
-    except ValueError:
-        continue
-    except ZeroDivisionError:
-        continue
+    # Check for zero division error
+    if denominator == 0:
+        raise ZeroDivisionError
+
+    # Check if numerator is greater than denominator
+    if numerator > denominator:
+        raise ValueError
+
+    # Compute
+    percentage = (numerator / denominator) * 100
+    percentage = round(percentage)
+    percentage = int(percentage)
+    return percentage
+
+def gauge(percentage):
+    # Check if percentage is already an integer
+    if isinstance(percentage, int):
+        percent_int = percentage
+    else:
+        percent_int = int(percentage.strip('%'))
+
+    # Sort through fuel gauge full vs empty vs other
+    if percent_int <= 1:
+        return("E")
+    elif percent_int >= 99:
+        return("F")
+    else:
+        # Output percent
+        return(f"{percent_int}%")
+
+
+if __name__ == "__main__":
+    main()
